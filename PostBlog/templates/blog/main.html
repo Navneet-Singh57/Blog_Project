@@ -1,0 +1,19 @@
+{% extends 'partials/base.html' %}
+{% load crispy_forms_tags %}
+{%block title%} HOME PAGE {%endblock%}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5 pt-3">
+        <div class="col-md-8">
+            <div class="card shadow offset-6 justify-content-center text-center">
+                <div class="card-body">
+                    <h3 class="float-md-start mb-0">Welcome to PostBlog</h3>
+                    <a class="btn btn-success" href="{% url 'user-sign_up' %}">Create an account</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
